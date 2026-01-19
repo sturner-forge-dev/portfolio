@@ -1,7 +1,6 @@
 # Senior Software Developer Portfolio
 
 This repository contains the personal portfolio of a Senior Software Developer, built with the Astro framework.
-![portfolio](https://user-images.githubusercontent.com/357379/210779178-a98f0fb7-6b1a-4068-894c-8e1403e26654.jpg)
 
 ## 🧞 Commands
 
