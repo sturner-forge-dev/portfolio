@@ -12,9 +12,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
 			>
 				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
+					width="1035"
+					height="582"
+					src="/assets/with-kids.jpg"
 					alt="Jeanine White at work with a colleague"
 				/>
 			</Hero>
@@ -28,6 +28,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 					<p>
             My technical expertise spans across various modern and established technologies, including front-end frameworks like React, Angular, and Vue, and full-stack development with PHP and Laravel. As a senior-level team lead, I combine technical mastery with leadership, actively mentoring junior and mid-level developers to foster a strong, collaborative engineering culture.
 					</p>
+          <p>
+            I currently live in beautiful Denver, Colorado with my girlfriend and our 11 year old Australian Cattle Dog. In my free time, I enjoy hiking, exploring the outdoors, and spending quality time with my family.
 				</div>
 			</section>
 			<section>
@@ -39,7 +41,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			<section>
 				<h2 class="section-title">Skills</h2>
 				<div class="content">
-					<ul>
+					<ul class="list">
 						<li>
 							<strong>Languages:</strong> PHP, JavaScript/TypeScript, SQL
 						</li>
@@ -107,6 +109,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 	.content :global(a:focus) {
 		text-decoration-color: currentColor;
 	}
+
+  .list {
+    padding-inline-start: 15px;
+  }
 
 	@media (min-width: 50em) {
 		.about {
