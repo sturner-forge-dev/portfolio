@@ -4,7 +4,7 @@ import Hero from '../components/Hero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
+<BaseLayout title="About | Steven Turner" description="About Steven Turner">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
@@ -12,10 +12,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
 			>
 				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
+					width="1035"
+					height="582"
+					src="/assets/with-kids.jpg"
+					alt="Steven Turner and girlfriend with nieces"
 				/>
 			</Hero>
 
@@ -23,35 +23,44 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				<h2 class="section-title">Background</h2>
 				<div class="content">
 					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed
-						do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+						I am a Senior Software Developer and Team Lead with 6 years of professional experience, primarily focused on the financial technology (Fintech) industry. Throughout my career, I have specialized in building robust internal tools for complex operations, particularly in the domain of loan processing.
 					</p>
 					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
+            My technical expertise spans across various modern and established technologies, including front-end frameworks like React, Angular, and Vue, and full-stack development with PHP and Laravel. As a senior-level team lead, I combine technical mastery with leadership, actively mentoring junior and mid-level developers to foster a strong, collaborative engineering culture.
 					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
-					</p>
+          <p>
+            I currently live in beautiful Denver, Colorado with my girlfriend and our 11 year old Australian Cattle Dog. In my free time, I enjoy hiking, exploring the outdoors, and spending quality time with my family.
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Education</h2>
 				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+          <p>Texas State University, 2020</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Skills</h2>
 				<div class="content">
-					<p>officia unde omnis</p>
+					<ul class="list">
+						<li>
+              <strong>Languages:</strong> PHP, JavaScript/TypeScript, SQL, Bash
+						</li>
+						<li>
+							<strong>Frontend:</strong> React, Angular, Tailwind CSS
+						</li>
+						<li>
+							<strong>Backend:</strong> Laravel, Node.js, REST APIs
+						</li>
+						<li>
+							<strong>Databases:</strong> MySQL, PostgreSQL
+						</li>
+						<li>
+							<strong>DevOps/Tools:</strong> Docker, Git, Sentry, CI/CD, JIRA
+						</li>
+						<li>
+              <strong>Concepts:</strong> System Architecture, Mentorship, Agile/Scrum, UI/UX
+						</li>
+					</ul>
 				</div>
 			</section>
 		</main>
@@ -100,6 +109,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 	.content :global(a:focus) {
 		text-decoration-color: currentColor;
 	}
+
+  .list {
+    padding-inline-start: 15px;
+  }
 
 	@media (min-width: 50em) {
 		.about {
