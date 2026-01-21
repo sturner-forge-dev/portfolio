@@ -1,7 +1,7 @@
 ---
 title: Autopay
 publishDate: 2026-01-19 00:00:00
-img: /assets/stock-1.jpg
+img: /portfolio/assets/stock-1.jpg
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
   Leading front-end development of a Loan Origination System (LOS-UI) and integrating core services post-merger, focused on performance and modernizing the codebase using React, Typescript, PHP, and Vue.js.

@@ -1,7 +1,7 @@
 ---
 title: RateGenius
 publishDate: 2026-01-17 00:00:00
-img: /assets/stock-3.jpg
+img: /portfolio/assets/stock-3.jpg
 img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
 description: |
   Delivering performant, well-tested PHP/Vue.js applications for a fintech company. Refactored the customer portal to include modern features like physical document tracking and a visual status bar for application progress.
