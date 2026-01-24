@@ -7,13 +7,25 @@ import ThemeToggle from './ThemeToggle.astro';
 const textLinks: { label: string; href: string }[] = [
 	{ label: 'Home', href: '/portfolio' },
 	{ label: 'Work', href: '/portfolio/work/' },
-  { label: 'About', href: '/portfolio/about/' },
+	{ label: 'About', href: '/portfolio/about/' },
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
-const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[] = [
-	{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/steven-turner12', icon: 'linkedin-logo' },
-  { label: 'Github', href: 'https://sturner-forge-dev.github.io', icon: 'github-logo'}
+const iconLinks: {
+	label: string;
+	href: string;
+	icon: keyof typeof iconPaths;
+}[] = [
+	{
+		label: 'LinkedIn',
+		href: 'https://www.linkedin.com/in/steven-turner12',
+		icon: 'linkedin-logo',
+	},
+	{
+		label: 'Github',
+		href: 'https://sturner-forge-dev.github.io',
+		icon: 'github-logo',
+	},
 ];
 
 /** Test if a link is pointing to the current page. */

@@ -1,10 +1,10 @@
 ---
-import type { CollectionEntry } from 'astro:content';
 import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
 
 interface Props {
 	project: CollectionEntry<'work'>;
-  loading?: 'eager' | 'lazy';
+	loading?: 'eager' | 'lazy';
 }
 
 const { data, id } = Astro.props.project;
