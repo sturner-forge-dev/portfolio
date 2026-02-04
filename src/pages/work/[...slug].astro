@@ -103,6 +103,18 @@ const { Content } = await render(entry);
 		margin: 1.5rem 0;
 	}
 
+	.content :global(hr) {
+		margin: 4rem 0; /* Increase spacing for horizontal rules to separate major sections */
+	}
+
+	.content :global(ul) {
+		padding-left: 1.5rem; /* Add default list padding if missing */
+	}
+
+	.content :global(li) {
+		margin-bottom: 0.75rem; /* Add spacing between bullet points */
+	}
+
 	.content :global(img) {
 		border-radius: 1.5rem;
 		box-shadow: var(--shadow-sm);

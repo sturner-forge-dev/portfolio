@@ -6,7 +6,6 @@ img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
   Leading front-end development of a Loan Origination System (LOS-UI) and integrating core services post-merger, focused on performance and modernizing the codebase using React, Typescript, PHP, and Vue.js.
 tags:
-  - Dev
   - React
   - TypeScript
   - PHP
@@ -17,19 +16,28 @@ tags:
   - GCP
 ---
 
-## Senior Software Engineer / Project Owner - Autopay LOS Team (Feb. 2024 - Present)
+## Senior Software Engineer / Project Owner
 
-**Tech Stack:** React, AngularJS, Typescript, AWS
+### Autopay LOS Team
+
+**Feb. 2024 - Present**
+
+**Tech Stack:** React, AngularJS, Typescript, Gitlab CI/CD, AWS
 
 - Led front-end development of LOS-UI, an internal Loan Origination System processing 8k+ refinance deals monthly.
 - Identified and resolved workflow issue with vehicle valuations, saving the company $3000/mo in excess third-party API calls.
 - Spearheaded effort to modernize the codebase by implementing industry-standard state management and data fetching libraries – Redux and RTK Query.
-- Identified and resolved issues with in-flight applications, reducing rejection rates by 65% through explicit field validations.
-- Mentored new team members on both the development and QA side. Helped to foster a collaborative work atmosphere that encourages experimentation and open communication. Held weekly check-ins with teammates to set goals and identify current roadblocks.
+- Identified and resolved issues with in-flight applications, reducing rejection rates by 65% through explicit field validations. Total cost savings in human intervention estimated at $8000/mo.
+- Implemented new features outside of explicit business asks: native dark mode in LOS-UI, and a revamped new application workflow designed to speed up the customer intake process and eliminate costly human error.
+- Mentored new team members on both the development and QA side, fostering a collaborative work atmosphere. Held weekly check-ins with teammates to set goals and identify current roadblocks.
 
 ---
 
-## Full-Stack Software Developer II - Autopay Lender Manager Team (Jan. 2022 - Feb. 2024)
+## Full-Stack Software Developer II
+
+### Autopay Lender Manager Team
+
+**Jan. 2022 - Feb. 2024**
 
 **Tech Stack:** PHP, Vue.js, MySQL, GCP
 

@@ -13,9 +13,11 @@ tags:
   - GCP
 ---
 
-## Full-Stack Software Developer I (Jan. 2020 - Jan. 2022)
+## Full-Stack Software Developer I
+### RateGenius Inc.
+**Jan. 2020 - Jan. 2022**
 
 **Tech Stack:** PHP, Vue.js, MySQL, GCP
 
-- Delivered performant, well-tested PHP/Vue.js applications used in production by hundreds of employees.
 - Refactored the customer portal to include modern features like physical document tracking and a visual status bar for application progress.
+- Delivered performant, well-tested PHP/Vue.js applications used in production by hundreds of employees.

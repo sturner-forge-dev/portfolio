@@ -28,13 +28,14 @@ const projects = (await getCollection('work'))
 			<header class="hero">
 				<Hero
 					title="Steven Turner" 
-					tagline="Software Developer"
+					tagline="Senior Software Engineer"
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+            <Pill><Icon icon="typescript-logo" size="1.33em" /> TypeScript</Pill>
+            <Pill><Icon icon='react-logo' size='1.33em' />React</Pill>
+            <Pill><Icon icon='backend' size='1.33em' />PHP</Pill>
+            <Pill><Icon icon='framework' size='1.33em'/>Laravel</Pill>
 					</div>
 				</Hero>
 
@@ -73,28 +74,6 @@ const projects = (await getCollection('work'))
 						View All
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
-				</div>
-			</section>
-
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
-					<p>
-						I have been fortunate enough to receive praise for my work in several publications. Take
-						a look below to learn more.
-					</p>
-				</header>
-
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
-						}
-					</Grid>
 				</div>
 			</section>
 		</main>
