@@ -33,18 +33,18 @@ import Icon from './Icon.astro';
 	.box {
 		border: 3px solid var(--gray-100);
 		border-radius: 1.25rem;
-		padding: 1.5rem;
+		padding: 1.5rem 1.25rem;
 		background:
 			linear-gradient(135deg, color-mix(in srgb, var(--gray-999) 86%, transparent), transparent), var(--gradient-subtle);
 		box-shadow:
-			12px 12px 0 var(--accent-regular),
+			5px 5px 0 var(--accent-regular),
 			var(--shadow-sm);
 	}
 
 	.skills {
 		display: flex;
 		flex-direction: column;
-		gap: 3rem;
+		gap: 2.25rem;
 	}
 
 	.skills h2 {
@@ -60,6 +60,9 @@ import Icon from './Icon.astro';
 		.box {
 			border-radius: 1.5rem;
 			padding: 2.5rem;
+			box-shadow:
+				12px 12px 0 var(--accent-regular),
+				var(--shadow-sm);
 		}
 
 		.skills {

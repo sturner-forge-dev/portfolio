@@ -30,6 +30,7 @@ tags:
 - Identified and resolved issues with in-flight applications, reducing rejection rates by 65% through explicit field validations. Total cost savings in human intervention estimated at $8000/mo.
 - Implemented new features outside of explicit business asks: native dark mode in LOS-UI, and a revamped new application workflow designed to speed up the customer intake process and eliminate costly human error.
 - Mentored new team members on both the development and QA side, fostering a collaborative work atmosphere. Held weekly check-ins with teammates to set goals and identify current roadblocks.
+- Orchestrated the adoption of LLM technologies within the team. Developed standards and best-practices for team members to adhere to. Developed a few AI tools to speed up development and testing, while ensuring precision and accuracy.
 
 ---
 
