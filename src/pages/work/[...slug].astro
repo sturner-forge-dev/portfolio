@@ -37,7 +37,7 @@ const { Content } = await render(entry);
 					<Hero title={entry.data.title} align="start">
 						<div class="details">
 							<div class="tags">
-								{entry.data.tags.map((t) => <Pill>{t}</Pill>)}
+								{entry.data.tags.map((t) => <Pill wrap>{t}</Pill>)}
 							</div>
 							<p class="description">{entry.data.description}</p>
 						</div>
@@ -85,15 +85,20 @@ const { Content } = await render(entry);
 		gap: 1.5rem;
 		justify-content: space-between;
 		align-items: center;
+		text-align: center;
 	}
 
 	.tags {
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(6.25rem, 100%), 1fr));
 		gap: 0.5rem;
+		width: min(100%, 24rem);
+		max-width: 100%;
+		padding-inline: 0.25rem 0.6rem;
 	}
 
 	.description {
-		font-size: var(--text-lg);
+		font-size: clamp(var(--text-md), 5vw, var(--text-lg));
 		max-width: 54ch;
 	}
 
@@ -174,6 +179,15 @@ const { Content } = await render(entry);
 		.details {
 			flex-direction: row;
 			gap: 2.5rem;
+			text-align: left;
+		}
+
+		.tags {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			width: auto;
+			padding-inline: 0;
 		}
 
 		.content :global(blockquote) {

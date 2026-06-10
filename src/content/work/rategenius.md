@@ -6,8 +6,8 @@ img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
 description: |
   Delivering performant, well-tested PHP/Vue.js applications for a fintech company. Refactored the customer portal to include modern features like physical document tracking and a visual status bar for application progress.
 tags:
-  - Dev
   - PHP
+  - Laravel
   - Vue.js
   - MySQL
   - GCP
@@ -15,7 +15,7 @@ tags:
 
 ## Full-Stack Software Developer I
 
-### RateGenius Inc.
+### RateGenius Inc
 
 **Jan. 2020 - Jan. 2022**
 
