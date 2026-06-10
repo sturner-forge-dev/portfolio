@@ -14,7 +14,9 @@ tags:
 ---
 
 ## Full-Stack Software Developer I
+
 ### RateGenius Inc.
+
 **Jan. 2020 - Jan. 2022**
 
 **Tech Stack:** PHP, Vue.js, MySQL, GCP

@@ -33,7 +33,7 @@ const { Content } = await render(entry);
 		<div class="stack gap-15">
 			<header>
 				<div class="wrapper stack gap-2">
-          <a class="back-link" href="/portfolio/work/"><Icon icon="arrow-left" /> Work</a>
+					<a class="back-link" href="/portfolio/work/"><Icon icon="arrow-left" /> Work</a>
 					<Hero title={entry.data.title} align="start">
 						<div class="details">
 							<div class="tags">
@@ -45,8 +45,19 @@ const { Content } = await render(entry);
 				</div>
 			</header>
 			<main class="wrapper">
-				<div class="stack gap-10 content">
-					{entry.data.img && <Image src={entry.data.img} alt={entry.data.img_alt || ''} width={480} height={480} loading="eager" />}
+				<div class="stack gap-10 project-content">
+					{
+						entry.data.img && (
+							<Image
+								class="project-image"
+								src={entry.data.img}
+								alt={entry.data.img_alt || ''}
+								width={960}
+								height={540}
+								loading="eager"
+							/>
+						)
+					}
 					<div class="content">
 						<Content />
 					</div>
@@ -86,9 +97,17 @@ const { Content } = await render(entry);
 		max-width: 54ch;
 	}
 
+	.project-content,
 	.content {
 		max-width: 65ch;
 		margin-inline: auto;
+	}
+
+	.project-image {
+		display: block;
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		object-fit: cover;
 	}
 
 	.content > :global(* + *) {
