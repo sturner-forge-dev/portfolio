@@ -6,27 +6,39 @@ import Icon from './Icon.astro';
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
 		<h2>Frontend</h2>
-		<p>Focused on React/TypeScript LOS-UI development, leading modernization efforts with Redux/RTK Query, and implementing key features like native dark mode and improved application workflows.</p>
+		<p>
+			I like interfaces that feel fast, obvious, and a little polished around the edges. React, TypeScript, state
+			management, design systems, weird browser bugs - all fair game.
+		</p>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
 		<h2>Backend</h2>
-		<p>Transitioned critical system components to a single microservice for lender management.</p>
+		<p>
+			I enjoy the less glamorous stuff too: clean APIs, reliable data flows, service boundaries, and code that keeps
+			behaving after everyone has stopped looking at it.
+		</p>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
 		<h2>Full-Stack</h2>
-		<p>Delivered performant, well-tested PHP/Vue.js applications and acted as a technical representative to onboard a new top revenue-generating lender.</p>
+		<p>
+			Best when I can zoom out, connect the dots, and ship the whole thing - from database shape to UI details to the
+			"wait, what happens if..." edge cases.
+		</p>
 	</div>
 </section>
 
 <style>
 	.box {
-		border: 1px solid var(--gray-800);
-		border-radius: 0.75rem;
+		border: 3px solid var(--gray-100);
+		border-radius: 1.25rem;
 		padding: 1.5rem;
-		background-color: var(--gray-999_40);
-		box-shadow: var(--shadow-sm);
+		background:
+			linear-gradient(135deg, color-mix(in srgb, var(--gray-999) 86%, transparent), transparent), var(--gradient-subtle);
+		box-shadow:
+			12px 12px 0 var(--accent-regular),
+			var(--shadow-sm);
 	}
 
 	.skills {
@@ -37,10 +49,11 @@ import Icon from './Icon.astro';
 
 	.skills h2 {
 		font-size: var(--text-lg);
+		letter-spacing: -0.04em;
 	}
 
 	.skills p {
-		color: var(--gray-400);
+		color: var(--gray-200);
 	}
 
 	@media (min-width: 50em) {

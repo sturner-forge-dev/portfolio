@@ -27,16 +27,12 @@ const projects = (await getCollection('work'))
 	<div class="stack gap-20 lg:gap-48">
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
-				<Hero
-					title="Steven Turner" 
-					tagline="Senior Software Engineer"
-					align="start"
-				>
+				<Hero title="Steven Turner" tagline="Senior Software Engineer" align="start" size="display" showEyebrow>
 					<div class="roles">
-            <Pill><Icon icon="typescript-logo" size="1.33em" /> TypeScript</Pill>
-            <Pill><Icon icon='react-logo' size='1.33em' />React</Pill>
-            <Pill><Icon icon='backend' size='1.33em' />PHP</Pill>
-            <Pill><Icon icon='framework' size='1.33em'/>Laravel</Pill>
+						<Pill><Icon icon="typescript-logo" size="1.33em" /> TypeScript</Pill>
+						<Pill><Icon icon="react-logo" size="1.33em" />React</Pill>
+						<Pill><Icon icon="backend" size="1.33em" />PHP</Pill>
+						<Pill><Icon icon="framework" size="1.33em" />Laravel</Pill>
 					</div>
 				</Hero>
 
@@ -44,8 +40,8 @@ const projects = (await getCollection('work'))
 					alt="Steven Turner smiling with eclipse glasses"
 					width="480"
 					height="620"
-          src="/portfolio/assets/selfie.jpg"
-          priority
+					src="/portfolio/assets/selfie.jpg"
+					priority
 				/>
 			</header>
 
@@ -72,7 +68,7 @@ const projects = (await getCollection('work'))
 				</div>
 
 				<div class="cta">
-          <CallToAction href="/portfolio/work/">
+					<CallToAction href="/portfolio/work/">
 						View All
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
@@ -86,10 +82,25 @@ const projects = (await getCollection('work'))
 
 <style>
 	.hero {
-		display: flex;
-		flex-direction: column;
+		display: grid;
 		align-items: center;
-		gap: 2rem;
+		gap: 2.5rem;
+		position: relative;
+		padding: 1rem 0 0;
+	}
+
+	.hero::before {
+		content: '';
+		position: absolute;
+		inset: 7% -6% auto auto;
+		width: min(18rem, 42vw);
+		aspect-ratio: 1;
+		border: 3px solid var(--gray-100);
+		border-radius: 42% 58% 62% 38% / 38% 42% 58% 62%;
+		background: var(--accent-light);
+		box-shadow: 12px 12px 0 var(--accent-regular);
+		z-index: -1;
+		transform: rotate(10deg);
 	}
 
 	.roles {
@@ -97,30 +108,39 @@ const projects = (await getCollection('work'))
 	}
 
 	.hero img {
+		display: block;
+		width: 100%;
 		aspect-ratio: 5 / 4;
 		object-fit: cover;
 		object-position: top;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
+		border: 4px solid var(--gray-100);
+		border-radius: 2rem;
+		box-shadow:
+			12px 12px 0 var(--accent-regular),
+			var(--shadow-md);
+		transform: rotate(1.5deg);
 	}
 
 	@media (min-width: 50em) {
 		.hero {
 			display: grid;
-			grid-template-columns: 6fr 4fr;
+			grid-template-columns: minmax(0, 1.12fr) minmax(18rem, 0.68fr);
 			padding-inline: 2.5rem;
-			gap: 3.75rem;
+			gap: 4.5rem;
+			min-height: 26rem;
 		}
 
 		.roles {
 			margin-top: 0.5rem;
 			display: flex;
+			flex-wrap: wrap;
 			gap: 0.5rem;
 		}
 
 		.hero img {
 			aspect-ratio: 3 / 4;
-			border-radius: 4.5rem;
+			min-height: 0;
+			border-radius: 35% 65% 54% 46% / 48% 38% 62% 52%;
 			object-fit: cover;
 		}
 	}
@@ -132,44 +152,17 @@ const projects = (await getCollection('work'))
 		gap: 2rem;
 	}
 
-	.with-background {
-		position: relative;
-	}
-
-	.with-background::before {
-		--hero-bg: var(--bg-image-subtle-2);
-
-		content: '';
-		position: absolute;
-		pointer-events: none;
-		left: 50%;
-		width: 100vw;
-		aspect-ratio: calc(2.25 / var(--bg-scale));
-		top: 0;
-		transform: translateY(-75%) translateX(-50%);
-		background:
-			url('/assets/backgrounds/noise.png') top center/220px repeat,
-			var(--hero-bg) center center / var(--bg-gradient-size) no-repeat,
-			var(--gray-999);
-		background-blend-mode: overlay, normal, normal, normal;
-		mix-blend-mode: var(--bg-blend-mode);
-		z-index: -1;
-	}
-
-	.with-background.bg-variant::before {
-		--hero-bg: var(--bg-image-subtle-1);
-	}
-
 	.section-header {
-		justify-self: center;
-		text-align: center;
+		justify-self: start;
+		text-align: left;
 		max-width: 50ch;
 		font-size: var(--text-md);
-		color: var(--gray-300);
+		color: var(--gray-200);
 	}
 
 	.section-header h3 {
-		font-size: var(--text-2xl);
+		font-size: clamp(var(--text-2xl), 8vw, var(--text-4xl));
+		letter-spacing: -0.06em;
 	}
 
 	@media (min-width: 50em) {
