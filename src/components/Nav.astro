@@ -123,7 +123,22 @@ const isCurrentPage = (href: string) => {
 			};
 
 			// Toggle menu visibility when the menu button is clicked.
-			btn.addEventListener('click', () => setExpanded(menu.hidden));
+			btn.addEventListener('click', (event) => {
+				event.stopPropagation();
+				setExpanded(menu.hidden);
+			});
+
+			document.addEventListener('click', (event) => {
+				if (menu.hidden) return;
+				const target = event.target;
+				if (!(target instanceof Node)) return;
+				if (menu.contains(target) || this.contains(target)) return;
+				setExpanded(false);
+			});
+
+			document.addEventListener('keydown', (event) => {
+				if (event.key === 'Escape') setExpanded(false);
+			});
 
 			// Hide menu button for large screens.
 			const handleViewports = (e: MediaQueryList | MediaQueryListEvent) => {
