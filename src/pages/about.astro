@@ -3,6 +3,8 @@ import { Image } from 'astro:assets';
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const BASE_PATH = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <BaseLayout title="About | Steven Turner" description="About Steven Turner">
@@ -12,7 +14,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				<Image
 					width="1035"
 					height="582"
-					src="/portfolio/assets/with-kids.jpg"
+					src={`${BASE_PATH}/assets/with-kids.jpg`}
 					alt="Steven Turner and girlfriend with nieces"
 					priority
 				/>
