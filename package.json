@@ -9,8 +9,7 @@
 		"astro": "astro",
 		"lint": "eslint .",
 		"format": "prettier --write .",
-		"format:check": "prettier --check .",
-		"generate-types": "wrangler types"
+		"format:check": "prettier --check ."
 	},
 	"dependencies": {
 		"@fontsource/inter": "^5.2.8",
